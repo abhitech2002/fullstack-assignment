@@ -1,0 +1,150 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 40px; 
+    margin-right: 10px; 
+}
+
+.request-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+.search-bar {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 400px; 
+}
+
+.no-cards-message {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.card {
+    background-color: #F9FAFB; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease;
+    text-align: left; 
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+}
+
+.card h3 {
+    font-size: 1.25em;
+    margin-bottom: 10px;
+    color: #111827;
+}
+
+.card p {
+    color: #6B7280; 
+}
+
+.footer {
+    background-color: #000;
+    color: #9CA3AF;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    position: relative;
+}
+
+.footer-logo {
+    grid-column: span 1;
+    text-align: left;
+}
+
+.footer-logo-image {
+    height: 30px; 
+}
+
+
+.footer-section {
+    margin-bottom: 10px;
+}
+
+.footer-section h3 {
+    font-size: 1.25em;
+    margin-bottom: 10px;
+    color: #FFFFFF; 
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+    color: #D1D5DB;
+}
+
+.footer-section p:hover {
+    color: #FFFFFF; 
+    cursor: pointer;
+}
+
+.footer-right {
+    grid-column: span 1;
+    text-align: left;
+    color: #9CA3AF; 
+    align-self: end;
+}
+
+.footer-right p {
+    margin: 5px 0;
+}
